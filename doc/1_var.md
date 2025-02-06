@@ -2,9 +2,8 @@
 **목차**<br>
 [1. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#1-%EB%B3%80%EC%88%98%EC%99%80-%EC%83%81%EC%88%98)변수와 상수<br>
 [2. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#2-%ED%83%80%EC%9E%85)타입<br>
-[3. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#3-null)null<br>
-[4. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#4-lateinit)lateinit<br>
-[5. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#5-%ED%8F%AC%EB%A7%B7%ED%8C%85)포맷팅<br>
+[3. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#4-lateinit)lateinit<br>
+[4. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#5-%ED%8F%AC%EB%A7%B7%ED%8C%85)포맷팅<br>
 
 ## 1. 변수와 상수
 - var: 변수
@@ -37,44 +36,7 @@ var number = 0
 var condition = false
 ```
 
-## 3. null
-- 타입 뒤에 ?를 붙여서 널값 허용 가능
-- 자바는 변수의 기본값이 null 허용인 반면,<br>
-코틀린은 반대로 기본값이 null값 비허용
-
-### 비교
-- 자바
-- 자바는 Annotation을 사용하여 Nullable과 NonNull 구분 가능
-```java
-@Nullable String strNullable = null;
-@NonNull String strNonNull = "";
-```
-- 코틀린
-```kotlin
-var strNullable: String? = null
-var strNonNull: String = ""
-```
-
-### null값 확인
-- 변수?.함수 실행 시 자동으로 null 검사
-#### 비교
-- 자바
-```java
-if (strNullable != null) {
-    strNullable.split("/");
-}
-```
-- 코틀린
-```kotlin
-strNullable?.split("/")
-```
-##### 주의사항
-- 변수에 null값이 들어가 있을 때 아래와 같이 코드를 작성하면 에러
-```kotlin
-strNullable.split("/") // NPE
-```
-
-## 4. lateinit
+## 3. lateinit
 - 초기화하지 않고 선언하기 위해서 lateinit 사용
 ```kotlin
 lateinit var string: String
@@ -92,7 +54,7 @@ lateinit var string: String
 | lateinit var | 불가능 | 선언만 가능 | isInitialized 체크 가능 |
 | var? | 가능 | 초기값 null 필요 | 그냥 사용 가능 |
 
-## 5. 포맷팅
+## 4. 포맷팅
 ```kotlin
 var myPet : String = "고양이"
 println("myPet: $myPet")
