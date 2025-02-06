@@ -4,12 +4,13 @@
 [2. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#2-%ED%83%80%EC%9E%85)타입<br>
 [3. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#4-lateinit)lateinit<br>
 [4. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#5-%ED%8F%AC%EB%A7%B7%ED%8C%85)포맷팅<br>
+***
 
 ## 1. 변수와 상수
 - var: 변수
 - val: 상수
 
-### 비교
+**비교**
 - 자바
 ```java
 String strVar = "";       // 변수
