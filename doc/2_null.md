@@ -1,16 +1,15 @@
 # null
-
 **목차**<br>
-[1. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1-1_null#%EA%B0%9C%EC%9A%94)개요<br>
-[2. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1-1_null#safe-call-operator-)Safe call operator ?.<br>
-[3. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1-1_null#elvis-operator-)Elvis operator ?:<br>
-[4. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1-1_null#not-null-assertion-operator-)Not-null assertion operator !!<br>
-[5. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1-1_null#let-%ED%95%A8%EC%88%98)let 함수<br>
-[6. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1-1_null#%EC%B0%B8%EA%B3%A0%EB%AC%B8%EC%84%9C)참고문헌<br>
+[1. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/2_null.md#1-%EA%B0%9C%EC%9A%94)개요<br>
+[2. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/2_null.md#2-safe-call-operator-)Safe call operator ?.<br>
+[3. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/2_null.md#3-elvis-operator-)Elvis operator ?:<br>
+[4. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/2_null.md#4-not-null-assertion-operator-)Not-null assertion operator !!<br>
+[5. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/2_null.md#5-let-%ED%95%A8%EC%88%98)let 함수<br>
+[6. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/2_null.md#6-%EC%B0%B8%EA%B3%A0%EB%AC%B8%EC%84%9C)참고문헌<br>
 
 ***
 
-## 개요
+## 1. 개요
 - 타입 뒤에 ?를 붙여서 널값 허용 가능
 - 자바는 변수의 기본값이 null 허용인 반면,<br>
 코틀린은 반대로 기본값이 null값 비허용
@@ -28,7 +27,7 @@ var strNullable: String? = null
 var strNonNull: String = ""
 ```
 
-## Safe call operator ?.
+## 2. Safe call operator ?.
 - 변수?.함수 실행 시 자동으로 null 검사
 **비교**
 - 자바
@@ -58,7 +57,7 @@ var strNullable : String? = null
 strNullable.split("/") // NPE
 ```
 
-## Elvis operator ?:
+## 3. Elvis operator ?:
 - null값인지 확인하고 값을 대입하는 삼항연산을 간편화
 - ?: 앞에 오는 값이 null일 경우 뒤쪽 코드 실행 및 반환
 
@@ -86,7 +85,7 @@ fun foo(node: Node): String? {
 }
 ```
 
-## Not-null assertion operator !!
+## 4. Not-null assertion operator !!
 - 명시적 NonNull 선언
 - !!를 이용하여 Nullable 값이 null이 아님을 명시적으로 표현
 - 만약 null값이 들어갈 경우 에러
@@ -98,7 +97,7 @@ println(l)
 ```
 - 참고로 위에서 l을 var, val 상관없이 String? 타입으로 선언하더라도 에러
 
-## let 함수
+## 5. let 함수
 - null값이 아닐 경우 뒤의 코드블럭을 실행
 ```kotlin
 var item : String? = "test"
@@ -106,5 +105,5 @@ item?.let { println(it) } // it을 통하여 item의 값인 "test" 출력
 // 만약 item이 null일 경우 코드블록 실행X
 ```
 
-## 참고문헌
+## 6. 참고문헌
 [코틀린 공식문서](https://kotlinlang.org/docs/null-safety.html)
