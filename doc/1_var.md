@@ -39,10 +39,39 @@ var condition = false
 
 ## 3. null
 - 타입 뒤에 ?를 붙여서 널값 허용 가능
+- 자바는 변수의 기본값이 null 허용인 반면,<br>
+코틀린은 반대로 기본값이 null값 비허용
+
+### 비교
+- 자바
+- 자바는 Annotation을 사용하여 Nullable과 NonNull 구분 가능
+```java
+@Nullable String strNullable = null;
+@NonNull String strNonNull = "";
+```
+- 코틀린
 ```kotlin
-var strVar: String? = null
-var number: Int? = null
-var condition: Boolean? = null
+var strNullable: String? = null
+var strNonNull: String = ""
+```
+
+### null값 확인
+- 변수?.함수 실행 시 자동으로 null 검사
+#### 비교
+- 자바
+```java
+if (strNullable != null) {
+    strNullable.split("/");
+}
+```
+- 코틀린
+```kotlin
+strNullable?.split("/")
+```
+##### 주의사항
+- 변수에 null값이 들어가 있을 때 아래와 같이 코드를 작성하면 에러
+```kotlin
+strNullable.split("/") // NPE
 ```
 
 ## 4. lateinit
