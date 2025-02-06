@@ -1,4 +1,11 @@
 # 변수
+**목차**<br>
+[1. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#1-%EB%B3%80%EC%88%98%EC%99%80-%EC%83%81%EC%88%98)변수와 상수<br>
+[2. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#2-%ED%83%80%EC%9E%85)타입<br>
+[3. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#3-null)null<br>
+[4. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#4-lateinit)lateinit<br>
+[5. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#5-%ED%8F%AC%EB%A7%B7%ED%8C%85)포맷팅<br>
+
 ## 1. 변수와 상수
 - var: 변수
 - val: 상수
@@ -56,3 +63,11 @@ lateinit var string: String
 | lateinit var | 불가능 | 선언만 가능 | isInitialized 체크 가능 |
 | var? | 가능 | 초기값 null 필요 | 그냥 사용 가능 |
 
+## 5. 포맷팅
+```kotlin
+var myPet : String = "고양이"
+println("myPet: $myPet")
+```
+```출력
+myPet: 고양이
+```
