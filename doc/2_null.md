@@ -50,7 +50,7 @@ println(a?.length) // 6
 println(b?.length) // null
 ```
 
-### 주의사항
+**주의사항**
 - 아래와 같이 변수에 null값이 들어가 있을 때 코드를 작성하면 에러
 ```kotlin
 var strNullable : String? = null
