@@ -106,4 +106,5 @@ item?.let { println(it) } // it을 통하여 item의 값인 "test" 출력
 ```
 
 ## 6. 참고문헌
+[Kotlin Tip of the day - 코틀린 문법 정리](https://spangle-wedelia-2dc.notion.site/Kotlin-Tip-of-the-day-3c8d4898bb884c589586173d46da6604)<br>
 [코틀린 공식문서](https://kotlinlang.org/docs/null-safety.html)
