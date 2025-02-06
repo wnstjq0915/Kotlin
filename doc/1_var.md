@@ -1,9 +1,9 @@
 # 변수
 **목차**<br>
-[1. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#1-%EB%B3%80%EC%88%98%EC%99%80-%EC%83%81%EC%88%98)변수와 상수<br>
-[2. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#2-%ED%83%80%EC%9E%85)타입<br>
-[3. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#4-lateinit)lateinit<br>
-[4. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/1_var.md#5-%ED%8F%AC%EB%A7%B7%ED%8C%85)포맷팅<br>
+[1. ](#1-%EB%B3%80%EC%88%98%EC%99%80-%EC%83%81%EC%88%98)변수와 상수<br>
+[2. ](#2-%ED%83%80%EC%9E%85)타입<br>
+[3. ](#3-lateinit)lateinit<br>
+[4. ](#4-%ED%8F%AC%EB%A7%B7%ED%8C%85)포맷팅<br>
 ***
 
 ## 1. 변수와 상수
@@ -42,12 +42,12 @@ var condition = false
 ```kotlin
 lateinit var string: String
 ```
-### 주의사항
+**주의사항**
 - 초기화하지 않으면 에러
 - 초기화 전에 사용하면 에러
 - 상수에는 사용 불가능
 
-### 비교
+**비교**
 - lateinit var와 var?의 비교
 
 |선언 방식| Nullable 가능? | 초기화 필요? | 사용 전 체크 필요? |
