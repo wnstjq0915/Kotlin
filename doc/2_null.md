@@ -1,11 +1,11 @@
 # null
 **목차**<br>
-[1. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/2_null.md#1-%EA%B0%9C%EC%9A%94)개요<br>
-[2. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/2_null.md#2-safe-call-operator-)Safe call operator ?.<br>
-[3. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/2_null.md#3-elvis-operator-)Elvis operator ?:<br>
-[4. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/2_null.md#4-not-null-assertion-operator-)Not-null assertion operator !!<br>
-[5. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/2_null.md#5-let-%ED%95%A8%EC%88%98)let 함수<br>
-[6. ](https://github.com/wnstjq0915/Kotlin/edit/main/doc/2_null.md#6-%EC%B0%B8%EA%B3%A0%EB%AC%B8%EC%84%9C)참고문헌<br>
+[1. ](#1-개요)개요<br>
+[2. ](#2-safe-call-operator-)Safe call operator ?.<br>
+[3. ](#3-elvis-operator-)Elvis operator ?:<br>
+[4. ](#4-not-null-assertion-operator-)Not-null assertion operator !!<br>
+[5. ](#5-let-함수)let 함수<br>
+[6. ](#6-참고문헌)참고문헌<br>
 
 ***
 
