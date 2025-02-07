@@ -1,12 +1,12 @@
 # 코틀린 벼락치기 정리공간
 
-**목차**
-1. [변수](https://github.com/wnstjq0915/Kotlin/blob/main/doc/1_var.md)
-2. [null](https://github.com/wnstjq0915/Kotlin/blob/main/doc/2_null.md)
-3. [조건문](https://github.com/wnstjq0915/Kotlin/blob/main/doc/3_%EC%A1%B0%EA%B1%B4%EB%AC%B8.md)
-4. [반복문](https://github.com/wnstjq0915/Kotlin/blob/main/doc/4_%EB%B0%98%EB%B3%B5%EB%AC%B8.md)
-5. [함수](https://github.com/wnstjq0915/Kotlin/blob/main/doc/5_function.md)
-6. [스코프 함수](https://github.com/wnstjq0915/Kotlin/blob/main/doc/6_scope_function.md)
+**목차**<br>
+[1. ](https://github.com/wnstjq0915/Kotlin/blob/main/doc/1_var.md)변수<br>
+[2. ](https://github.com/wnstjq0915/Kotlin/blob/main/doc/2_null.md)null<br>
+[3. ](https://github.com/wnstjq0915/Kotlin/blob/main/doc/3_%EC%A1%B0%EA%B1%B4%EB%AC%B8.md)조건문<br>
+[4. ](https://github.com/wnstjq0915/Kotlin/blob/main/doc/4_%EB%B0%98%EB%B3%B5%EB%AC%B8.md)반복문<br>
+[5. ](https://github.com/wnstjq0915/Kotlin/blob/main/doc/5_function.md)함수<br>
+[6. ](https://github.com/wnstjq0915/Kotlin/blob/main/doc/6_scope_function.md)스코프 함수<br>
 ***
 
 ## 참고자료
