@@ -1,5 +1,5 @@
 # 스코프 함수
-**목차**
+**목차**<br>
 [1. ](#1-%EA%B0%9C%EC%9A%94)개요<br>
 [2. ](#2-apply)apply<br>
 [3. ](#3-run)run<br>
@@ -68,6 +68,7 @@ class Book(var name: String, var price: Int){
 
 ## 4. with
 - run과 사용이 동일함
+
 **run**
 ```kotlin
 var bookCost = a.run{
@@ -87,6 +88,7 @@ var bookCost = with(a){
 - apply와 같은 동작을 하나 it을 사용할 수 있음
 - 인스턴스 프로퍼티와 이름이 같은 변수가 있을 경우<br>
 it을 쓰기 위해 사용
+
 **apply**
 ```kotlin
 var a = Book("해로의 모험", 10000).apply{
