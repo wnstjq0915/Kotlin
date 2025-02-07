@@ -1,9 +1,11 @@
 # 함수
 **목차**<br>
-[1. ]()선언<br>
-[2. ]()가변인자<br>
-[3. ]()인라인 함수<br>
-[1. ]()선언<br>
+[1. ](#1-%EC%84%A0%EC%96%B8)선언<br>
+[2. ](#2-%EA%B0%80%EB%B3%80%EC%9D%B8%EC%9E%90)가변인자<br>
+[3. ]()인라인함수<br>
+[4. ]()익명함수<br>
+[5. ]()고차함수<br>
+[6. ]()람다식<br>
 
 ***
 
@@ -50,7 +52,7 @@ val value = nullableString ?: throw IllegalStateException()
 
 - Nothing은 리턴이라는 행위 자체를 하지 않음을 의미
 
-## 가변인자
+## 2. 가변인자
 - Java와 똑같이 배열 형태로 사용
 ```kotlin
 fun sum(vararg arrNum: Int) : Int {
@@ -62,7 +64,7 @@ fun sum(vararg arrNum: Int) : Int {
 }
 ```
 
-## 인라인 함수
+## 3. 인라인함수
 - 반복문 같은 곳에서 함수를 자주 호출하게 되면  
 호출하는 리소스로 인해 느려지게 됨
 - 위와 같은 단점을 보완하는 함수
@@ -72,7 +74,7 @@ fun sum(vararg arrNum: Int) : Int {
 inline fun sum(a:Int, b:Int) = a + b
 ```
 
-## 익명함수
+## 4. 익명함수
 - 이름만 없는 구조의 함수
 - 람다식 문법의 제약을 무시하고 사용하기 위해
 ```kotlin
@@ -87,7 +89,7 @@ val testFunc = fun(a:Int,b:Int):Int{
 }
 ```
 
-## 고차함수
+## 5. 고차함수
 ### 반환값으로 사용
 - 반환값에서 함수를 호출하여 반환하는 형식
 ```kotlin
@@ -123,7 +125,7 @@ TestFunc가 시작된 뒤에 함수가 실행될 수 있도록 사용<br>
 fun abs(v:Int): Int = if(0 < v) v else -v
 ```
 
-## 람다식
+## 6. 람다식
 **기본구조**
 ```kotlin
 {v1, v2 -> expression}
