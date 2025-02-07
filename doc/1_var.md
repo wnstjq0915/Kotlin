@@ -59,7 +59,15 @@ lateinit var string: String
 ```kotlin
 var myPet : String = "고양이"
 println("myPet: $myPet")
-```
-```출력
+/* 출력
 myPet: 고양이
+*/
+```
+- 띄어쓰기를 하지 않는 경우는 스코프 사용
+```kotlin
+var myPet : String = "고양이"
+println("나는 ${myPet}가 좋아")
+/* 출력
+나는 고양이가 좋아
+*/
 ```
